@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.nav-list {
+    width: 50%;  
+    /* nav list 30% for responsive */
+    /* background-color: black; */
+    display: flex;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 34px;
+
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    padding: 12px;
+
+}
+
+.logo img {
+    width: 70%;
+    border: 3px solid black;
+    border-radius: 30px;
+
+
+}
+
+.rightnav {
+    /* background-color: blue; */
+    width: 30%;
+    text-align: right;
+}
+
+.nav-list li a:hover {
+    color: grey;
+}
+
+#search {
+    border: 2px solid black;
+    width: 50%;
+}
+
+.btn {
+    border: 2px solid black;
+    /* width: 60px; */
+    background-color: black;
+    color: white;
+    padding: 1px;
+    margin: 5px;
+    /* margin: 5px ; */
+    /* background: none;
+    color: black; */
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url(pexels-lukas-kloeppel-466685.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.first-heading {
+    color: black;
+}
+
+.first-para {
+    color: black;
+
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding: 43px;
+    margin: auto;
+    max-width: 50%;
+}
+
+.firstsection {
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+.firsthalf {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondhalf {
+    width: 10%;
+}
+
+.secondhalf img {
+    width: 128px;
+    border: 1px solid white;
+    border-radius: 50px;
+    /* opacity: 0.5; */
+
+}
+
+.text-big {
+    font-size: 42px;
+}
+
+.text-small {
+    font-size: 15px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 250px;   */
+    max-width: 75%;
+    margin: auto;
+    background: url();
+}
+
+.sec-left {
+    /* flex-direction: row-reverse; */
+}
+
+.imgfluid {
+    height: 130px;
+
+}
+
+.paras {
+    padding: 12px;
+}
+
+.sectag {
+    padding: 10px 0px;
+}
+
+.contact {
+    background-color: #f9efef;
+    height: 440px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form {
+    max-width: 300px;
+    margin: auto;
+}
+
+.form input {
+    width: 100%;
+    padding: 2px;
+    margin-top: 15px;
+}
+
+.footer {
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    /* height: 100px;
+    padding: 54px; */
+}
+
+.paras{
+    /* background-color: aquamarine; */
+}
+
+.aboutus{
+    font-size: medium;
+    background-color: #e1dce6;
+    /* padding-top: 20px; */
+    margin-top: 15px;
+}
+
+.about-us-font{
+    font-size: 32px;
+    margin-top: 15px;
+}
+
+/* .color-services{
+    background-color: blue;
+    margin-top: 15px;
+    
+} */
+.services{
+    background-color: #ffdddd;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 11%;
+    top: 18px;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 4px 3px;
+}
+
+/* Responsive */
+@media only screen and (max-width:1439px) {
+    .nav-list{
+        flex-direction: column;
+        /* home contact about will come i horizontal lone */
+    }
+    .navbar{
+        flex-direction: column;
+        /* search box will come below i.e horizontal line */
+    }
+    .rightnav{
+        text-align: left;
+        /* search text filed will come center inline to home,services,.... */
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 74px;
+    }
+    .v-class-resp{
+        opacity: 0;
+        /* After doind v-class and h-nav responsive the home , section,other things will not be visiable we need to fire event listeners to hamburger */
+    }
+    .box-main{
+        /* this is for section all the paragraph  to keep webpahe clean start editing from here*/
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .section{
+        flex-direction: column-reverse;
+        background: none;
+
+    }
+    .first-heading{
+        color: black;
+    }
+    .first-para{
+        color: black;
+    }
+    .background{
+        background: none;
+    }
+    .firstsection{
+        background-color: #e1dce6;
+        /* opacity: 0.5; */
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .btn{
+        text-align: center;
+        /* after text-allign to center the letters are small to see if u want remove  */
+    }
+    .paras{
+        /* padding: 0px; If u want to have letters and heading close by u can give padding 0px */
+    }
+    .imgfluid{
+        padding-top: 40px;
+        /* background: none; */
+    }
+
+}
